@@ -1,0 +1,47 @@
+﻿@using OnePage.Models
+@model HikayeViewModel
+
+<div id="story">
+    <div class="story-content">
+        <div class="container">
+            <h3>@Model.Gelin & @Model.Damat. @Model.Hikaye.Baslik!</h3>
+            <div class="heart content-style"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="base">
+                            <img src="/Content/images/her.jpg" alt="" />
+                        </div>
+                    </div>
+                    <h4 class="bride-name">@Model.Gelin</h4>
+                    <h3 class="bride-description">Gelin</h3>
+                    <div class="social">
+                        <a href="#"><i class="fa-facebook"></i></a>
+                        <a href="#"><i class="fa-twitter"></i></a>
+                    </div>
+                </div><!--end col-md-3-->
+                <div class="col-md-6">
+                   @Model.Hikaye.Yazi
+
+                    <p>. . . </p>
+                </div><!--end-col-md-6-->
+                <div class="col-md-3">
+                    <div class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="base">
+                            <img src="/Content/images/him.jpg" alt="" />
+                        </div>
+                    </div>
+                    <h4 class="groom-name">@Model.Damat</h4>
+                    <h3 class="groom-description">Damat</h3>
+                    <div class="social">
+                        <a href="#"><i class="fa-facebook"></i></a>
+                        <a href="#"><i class="fa-twitter"></i></a>
+                    </div>
+                </div><!--end col-md-3-->
+            </div><!--end row-->
+
+        </div><!--end container-->
+    </div><!--end story content-->
+</div><!--end #story-->

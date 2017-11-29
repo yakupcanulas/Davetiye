@@ -1,0 +1,12 @@
+﻿@using OnePage.Models
+@model Dugun
+
+<div class="header animated tada">
+    <h1>@Model.DamatIsim & @Model.GelinIsim</h1>
+    <h4>EVLENIYOR</h4>
+    <hr />
+    <h4>@Model.Tarih.ToLongDateString() @Model.Adres</h4>
+    <div class="header-button">
+        <a href="#form">Bizimle Kutlayın!</a>
+    </div>
+</div>

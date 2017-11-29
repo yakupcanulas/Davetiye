@@ -1,0 +1,9 @@
+﻿@using OnePage.Models
+@model List<Slider>
+
+<ul id="cbp-bislideshow" class="cbp-bislideshow">
+    @foreach (Slider item in Model)
+    {
+        <li><img src="/Content/uploads/@item.ResimURL" alt="@item.Aciklama" /></li>
+    }
+</ul>
